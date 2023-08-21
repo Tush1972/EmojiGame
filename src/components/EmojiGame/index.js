@@ -52,7 +52,7 @@ class EmojiGame extends Component {
     this.setState({topScore: newTopScore, isGameInProgress: false})
   }
 
-  clickedEmoji = id => {
+  clickEmoji = id => {
     const {emojisList} = this.props
     const {clickedEmojisList} = this.state
     const isEmojiPresent = clickedEmojisList.includes(id)
